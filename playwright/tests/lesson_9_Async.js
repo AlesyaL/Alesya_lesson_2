@@ -19,7 +19,7 @@ Promise.all([promise1, promise2])
     console.error("Помилка", error);
 });
 
-const promise3 = Promise.reject(getPost('https://jsonplaceholder.typicode.com/postsss/2'));
+const promise3 = Promise.reject(getPost('https://jsonplaceholder.typicode.com/posts/2'));
 const promise4 = Promise.resolve(getComments('https://jsonplaceholder.typicode.com/comments/1'));
 
 let func = async function(){

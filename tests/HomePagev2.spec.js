@@ -5,9 +5,6 @@ import { chromium } from 'playwright';
 
 export default class HomePage{
     constructor(page){
-    //this.browser = chromium.launch({headless:false});
-    //this.page = browser.newPage();
-    //this.homePage = page.HomePage
     this.page = page;
     this.email = page.locator('//input[@name="session_key"]');
     this.password = page.locator('//input[@name="session_password"]');
